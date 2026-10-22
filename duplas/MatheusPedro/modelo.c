@@ -7,13 +7,13 @@
     - Pedro
 */
 int main(int argc, char* argv[]){
-    int input = atoi(argv[0]);
+    int input = atoi(argv[1]);
 
     char* nomeFib = NOME_FIB;
     char* nomeFat = NOME_FAT;
 
-    printf("Codigo Fibonacci desenvolvido por %s\t: Fib(%d) = %d\n",nomeFib,input,fibonacci(input));
-    printf("Codigo Fatorial desenvolvido por  %s\t: Fat(%d) = %d\n",nomeFat,input,fatorial(input));
+    printf("Codigo Fib desenvolvido por %s\t: Fib(%d) = %d\n",nomeFib,input,fibonacci(input));
+    printf("Codigo Fat desenvolvido por %s\t: Fat(%d) = %d\n",nomeFat,input,fatorial(input));
     printf("\n");
 
 }
