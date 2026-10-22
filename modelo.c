@@ -1,16 +1,15 @@
 #include <stdio.h>
-#include "funcoes.h"
-
+#include "fib.h"
+#include "fat.h"
 /*Nome da dupla:
     -
     -
 */
-int main(){
-    int input;
-    scanf("%d",&input);
+int main(int argc, char* argv[]){
+    int input = atoi(argv[0]);
 
-    char nomeFib[] = "";
-    char nomeFat[] = "";
+    char nomeFib[] = nomeFib();
+    char nomeFat[] = nomeFat();
     
     int resultado = fibonacci(input);
     
