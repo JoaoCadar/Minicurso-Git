@@ -3,8 +3,8 @@
 #include "fib.h"
 #include "fat.h"
 /*Nome da dupla:
-    -
-    -
+    - Matheus
+    - Pedro
 */
 int main(int argc, char* argv[]){
     int input = atoi(argv[0]);
