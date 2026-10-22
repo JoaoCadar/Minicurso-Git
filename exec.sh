@@ -1,9 +1,11 @@
+ROOT_DIR=$PWD
 test -d build || mkdir build 
 for dir in duplas/*; do
-    TARGET=build/$(echo $file | sed 's/^[^\/]*\///; s/\.c$//')
-    gcc $file/modelo.c -o $TARGET
+    cd $ROOT_DIR/$dir
+    TARGET=$ROOT_DIR/build/$(echo $dir | sed 's/^[^\/]*\///; s/\.c$//')
+    gcc modelo.c -o $TARGET
 done
 
 for exec in build/*; do
-    ./$exec $1
+    $ROOT_DIR/$exec $1
 done
